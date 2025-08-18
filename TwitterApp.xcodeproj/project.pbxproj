@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B51401F2E53730A00D1E48C /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B51401E2E53730A00D1E48C /* SearchCell.swift */; };
+		4B5140212E53740800D1E48C /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5140202E53740800D1E48C /* SearchBar.swift */; };
 		4B51DE7D2E3D43C9003A2702 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B51DE7A2E3D43C9003A2702 /* ContentView.swift */; };
 		4B51DE7E2E3D43C9003A2702 /* TwitterAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B51DE7B2E3D43C9003A2702 /* TwitterAppApp.swift */; };
 		4B51DE7F2E3D43C9003A2702 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B51DE792E3D43C9003A2702 /* Assets.xcassets */; };
@@ -17,9 +19,12 @@
 		4B51DF0A2E3FC307003A2702 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B51DF092E3FC307003A2702 /* MessagesView.swift */; };
 		4B51DF0C2E3FC92D003A2702 /* CreateTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B51DF0B2E3FC92D003A2702 /* CreateTweetView.swift */; };
 		4B51DF0E2E3FC9F7003A2702 /* MultilineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B51DF0D2E3FC9F7003A2702 /* MultilineTextField.swift */; };
+		4B51DF2B2E412483003A2702 /* TweetCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B51DF2A2E412483003A2702 /* TweetCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B51401E2E53730A00D1E48C /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		4B5140202E53740800D1E48C /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		4B51DE6B2E3D42D0003A2702 /* TwitterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B51DE792E3D43C9003A2702 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B51DE7A2E3D43C9003A2702 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -31,6 +36,7 @@
 		4B51DF092E3FC307003A2702 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		4B51DF0B2E3FC92D003A2702 /* CreateTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTweetView.swift; sourceTree = "<group>"; };
 		4B51DF0D2E3FC9F7003A2702 /* MultilineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTextField.swift; sourceTree = "<group>"; };
+		4B51DF2A2E412483003A2702 /* TweetCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				4B51DF0D2E3FC9F7003A2702 /* MultilineTextField.swift */,
+				4B5140202E53740800D1E48C /* SearchBar.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -153,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				4B51DF052E3FC2F2003A2702 /* SearchView.swift */,
+				4B51401E2E53730A00D1E48C /* SearchCell.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -161,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				4B51DF032E3FC2E9003A2702 /* Feed.swift */,
+				4B51DF2A2E412483003A2702 /* TweetCellView.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -245,9 +254,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B51DF2B2E412483003A2702 /* TweetCellView.swift in Sources */,
+				4B51401F2E53730A00D1E48C /* SearchCell.swift in Sources */,
 				4B51DF0C2E3FC92D003A2702 /* CreateTweetView.swift in Sources */,
 				4B51DF062E3FC2F2003A2702 /* SearchView.swift in Sources */,
 				4B51DE7D2E3D43C9003A2702 /* ContentView.swift in Sources */,
+				4B5140212E53740800D1E48C /* SearchBar.swift in Sources */,
 				4B51DF042E3FC2E9003A2702 /* Feed.swift in Sources */,
 				4B51DF022E3FC16D003A2702 /* Home.swift in Sources */,
 				4B51DF0A2E3FC307003A2702 /* MessagesView.swift in Sources */,
