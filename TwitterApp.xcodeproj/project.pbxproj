@@ -24,6 +24,8 @@
 		4B51DF0C2E3FC92D003A2702 /* CreateTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B51DF0B2E3FC92D003A2702 /* CreateTweetView.swift */; };
 		4B51DF0E2E3FC9F7003A2702 /* MultilineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B51DF0D2E3FC9F7003A2702 /* MultilineTextField.swift */; };
 		4B51DF2B2E412483003A2702 /* TweetCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B51DF2A2E412483003A2702 /* TweetCellView.swift */; };
+		4BF855422E54C2A3008C1288 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF855412E54C2A3008C1288 /* TopBar.swift */; };
+		4BF855442E54C3FC008C1288 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF855432E54C3FC008C1288 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		4B51DF0B2E3FC92D003A2702 /* CreateTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTweetView.swift; sourceTree = "<group>"; };
 		4B51DF0D2E3FC9F7003A2702 /* MultilineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTextField.swift; sourceTree = "<group>"; };
 		4B51DF2A2E412483003A2702 /* TweetCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCellView.swift; sourceTree = "<group>"; };
+		4BF855412E54C2A3008C1288 /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
+		4BF855432E54C3FC008C1288 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,7 +201,9 @@
 		4B51DF002E3FC13F003A2702 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				4BF855432E54C3FC008C1288 /* MainView.swift */,
 				4B51DF012E3FC16D003A2702 /* Home.swift */,
+				4BF855412E54C2A3008C1288 /* TopBar.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -275,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B51DF2B2E412483003A2702 /* TweetCellView.swift in Sources */,
+				4BF855442E54C3FC008C1288 /* MainView.swift in Sources */,
 				4B51402A2E5383A700D1E48C /* MessageCell.swift in Sources */,
 				4B51401F2E53730A00D1E48C /* SearchCell.swift in Sources */,
 				4B51DF0C2E3FC92D003A2702 /* CreateTweetView.swift in Sources */,
@@ -283,6 +290,7 @@
 				4B51DE7D2E3D43C9003A2702 /* ContentView.swift in Sources */,
 				4B5140212E53740800D1E48C /* SearchBar.swift in Sources */,
 				4B51DF042E3FC2E9003A2702 /* Feed.swift in Sources */,
+				4BF855422E54C2A3008C1288 /* TopBar.swift in Sources */,
 				4B51DF022E3FC16D003A2702 /* Home.swift in Sources */,
 				4B51DF0A2E3FC307003A2702 /* MessagesView.swift in Sources */,
 				4B51DF0E2E3FC9F7003A2702 /* MultilineTextField.swift in Sources */,
