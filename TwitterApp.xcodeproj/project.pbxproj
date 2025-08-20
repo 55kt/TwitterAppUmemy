@@ -29,6 +29,8 @@
 		4BF855462E54C5A5008C1288 /* SlideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF855452E54C5A5008C1288 /* SlideMenu.swift */; };
 		4BF855482E54C678008C1288 /* FollowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF855472E54C678008C1288 /* FollowView.swift */; };
 		4BF8554A2E54C90B008C1288 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF855492E54C90B008C1288 /* MenuButton.swift */; };
+		4BF8554C2E560821008C1288 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF8554B2E560821008C1288 /* UserProfile.swift */; };
+		4BF8554E2E5609DC008C1288 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF8554D2E5609DB008C1288 /* BlurView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,8 @@
 		4BF855452E54C5A5008C1288 /* SlideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenu.swift; sourceTree = "<group>"; };
 		4BF855472E54C678008C1288 /* FollowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowView.swift; sourceTree = "<group>"; };
 		4BF855492E54C90B008C1288 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
+		4BF8554B2E560821008C1288 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		4BF8554D2E5609DB008C1288 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,8 @@
 		4B51DEF82E3FC0D4003A2702 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				4BF8554B2E560821008C1288 /* UserProfile.swift */,
+				4BF8554D2E5609DB008C1288 /* BlurView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -291,6 +297,7 @@
 			files = (
 				4B51DF2B2E412483003A2702 /* TweetCellView.swift in Sources */,
 				4BF855442E54C3FC008C1288 /* MainView.swift in Sources */,
+				4BF8554E2E5609DC008C1288 /* BlurView.swift in Sources */,
 				4BF8554A2E54C90B008C1288 /* MenuButton.swift in Sources */,
 				4B51402A2E5383A700D1E48C /* MessageCell.swift in Sources */,
 				4B51401F2E53730A00D1E48C /* SearchCell.swift in Sources */,
@@ -305,6 +312,7 @@
 				4B51DF022E3FC16D003A2702 /* Home.swift in Sources */,
 				4BF855482E54C678008C1288 /* FollowView.swift in Sources */,
 				4B51DF0A2E3FC307003A2702 /* MessagesView.swift in Sources */,
+				4BF8554C2E560821008C1288 /* UserProfile.swift in Sources */,
 				4B51DF0E2E3FC9F7003A2702 /* MultilineTextField.swift in Sources */,
 				4B51DE7E2E3D43C9003A2702 /* TwitterAppApp.swift in Sources */,
 				4B51DF082E3FC2FE003A2702 /* NotificationsView.swift in Sources */,
