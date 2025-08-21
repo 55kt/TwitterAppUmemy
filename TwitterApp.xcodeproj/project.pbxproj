@@ -31,6 +31,7 @@
 		4BF8554A2E54C90B008C1288 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF855492E54C90B008C1288 /* MenuButton.swift */; };
 		4BF8554C2E560821008C1288 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF8554B2E560821008C1288 /* UserProfile.swift */; };
 		4BF8554E2E5609DC008C1288 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF8554D2E5609DB008C1288 /* BlurView.swift */; };
+		4BF855A62E57671C008C1288 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF855A52E57671C008C1288 /* TabButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		4BF855492E54C90B008C1288 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 		4BF8554B2E560821008C1288 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		4BF8554D2E5609DB008C1288 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		4BF855A52E57671C008C1288 /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 				4B5140202E53740800D1E48C /* SearchBar.swift */,
 				4BF855472E54C678008C1288 /* FollowView.swift */,
 				4BF855492E54C90B008C1288 /* MenuButton.swift */,
+				4BF855A52E57671C008C1288 /* TabButton.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				4B51DF0E2E3FC9F7003A2702 /* MultilineTextField.swift in Sources */,
 				4B51DE7E2E3D43C9003A2702 /* TwitterAppApp.swift in Sources */,
 				4B51DF082E3FC2FE003A2702 /* NotificationsView.swift in Sources */,
+				4BF855A62E57671C008C1288 /* TabButton.swift in Sources */,
 				4B5140282E537FEE00D1E48C /* NotificationCell.swift in Sources */,
 				4B5140262E537B0500D1E48C /* Extensions.swift in Sources */,
 			);
