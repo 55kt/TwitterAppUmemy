@@ -34,7 +34,7 @@ struct UserProfile: View {
                             Image("banner")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
-                                .frame(width: UIScreen.main.bounds.width, height: minY > 0 ? 180 + minY : 180, alignment: .center)
+                                .frame(width: getRect().width, height: minY > 0 ? 180 + minY : 180, alignment: .center)
                                 .cornerRadius(0)
                             
                             BlurView()
@@ -68,7 +68,6 @@ struct UserProfile: View {
                             .frame(width: 75, height: 75)
                             .clipShape(Circle())
                             .padding(8)
-                            .background(Color.white)
                             .background(Color.white.clipShape(Circle()))
                             .offset(y: offset < 0 ? getOffset() - 20 : -20)
                             .scaleEffect(getScale())
@@ -156,9 +155,25 @@ struct UserProfile: View {
                                 .frame(width: 0, height: 0), alignment: .top
                         )
                         .zIndex(1)
+                    
+                    VStack(spacing: 18) {
+                        TweetCellView(tweet: "Hey Tim are those regular glasses?", tweetImage: "post")
+                        
+                        Divider()
+                        
+                        ForEach(0..<20, id:\.self) { _ in
+                            TweetCellView(tweet: "sampleText")
+                            Divider()
+                        }
                     }
+                    .padding(.top)
+                    .zIndex(0)
+                    }
+                .padding(.horizontal)
+                .zIndex(-offset > 80 ? 0 : 1)
                 }
             }
+        .ignoresSafeArea(.all, edges: .top)
         }
     
     func blurViewOpacity() -> Double {
