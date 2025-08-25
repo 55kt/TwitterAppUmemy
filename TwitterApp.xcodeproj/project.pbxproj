@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B4F1F412E5CA49200FB5552 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4F1F402E5CA49200FB5552 /* WelcomeView.swift */; };
 		4B51401F2E53730A00D1E48C /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B51401E2E53730A00D1E48C /* SearchCell.swift */; };
 		4B5140212E53740800D1E48C /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5140202E53740800D1E48C /* SearchBar.swift */; };
 		4B5140232E5377D200D1E48C /* SearchUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5140222E5377D200D1E48C /* SearchUserCell.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B4F1F402E5CA49200FB5552 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		4B51401E2E53730A00D1E48C /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		4B5140202E53740800D1E48C /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		4B5140222E5377D200D1E48C /* SearchUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserCell.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 		4B51DEFB2E3FC111003A2702 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				4B4F1F402E5CA49200FB5552 /* WelcomeView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				4BF8554C2E560821008C1288 /* UserProfile.swift in Sources */,
 				4B51DF0E2E3FC9F7003A2702 /* MultilineTextField.swift in Sources */,
 				4B51DE7E2E3D43C9003A2702 /* TwitterAppApp.swift in Sources */,
+				4B4F1F412E5CA49200FB5552 /* WelcomeView.swift in Sources */,
 				4B51DF082E3FC2FE003A2702 /* NotificationsView.swift in Sources */,
 				4BF855A62E57671C008C1288 /* TabButton.swift in Sources */,
 				4B5140282E537FEE00D1E48C /* NotificationCell.swift in Sources */,
