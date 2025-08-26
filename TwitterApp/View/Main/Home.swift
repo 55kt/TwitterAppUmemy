@@ -8,16 +8,17 @@
 import SwiftUI
 
 struct Home: View {
+    //MARK: - Properties
+    @State private var selectedIndex: Int = 0
+    @State private var showCreateTweet: Bool = false
+    @State private var text: String = ""
     
-    @State var selectedIndex = 0
-    @State var showCreateTweet: Bool = false
-    @State var text = ""
-    
+    //MARK: - Body
     var body: some View {
         VStack {
             ZStack {
-                
                 TabView {
+                    //MARK: - Feed Section
                     Feed()
                         .onTapGesture {
                             self.selectedIndex = 0
@@ -34,6 +35,7 @@ struct Home: View {
                         }
                         .tag(0)
                     
+                    //MARK: - Search Section
                     SearchView()
                         .onTapGesture {
                             self.selectedIndex = 1
@@ -50,6 +52,7 @@ struct Home: View {
                         }
                         .tag(1)
                     
+                    //MARK: - Notification Section
                     NotificationsView()
                         .onTapGesture {
                             self.selectedIndex = 2
@@ -66,6 +69,7 @@ struct Home: View {
                         }
                         .tag(2)
                     
+                    //MARK: - Messages Section
                     MessagesView()
                         .onTapGesture {
                             self.selectedIndex = 3
@@ -83,14 +87,11 @@ struct Home: View {
                         .tag(3)
                 }
                 
+                //MARK: - Create Tweet Float Button
                 VStack {
-                    
                     Spacer()
-                    
                     HStack {
-                        
                         Spacer()
-                        
                         Button {
                             self.showCreateTweet.toggle()
                         } label: {
@@ -111,12 +112,13 @@ struct Home: View {
                 
             }
             .sheet(isPresented: $showCreateTweet) {
-                CreateTweetView(text: text)
+                CreateTweetView()
             }
         }
     }
 }
 
+//MARK: - Preview
 #Preview {
     Home()
 }

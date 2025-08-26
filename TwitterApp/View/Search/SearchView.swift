@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct SearchView: View {
+    //MARK: - Properties
+    @State var text: String = ""
+    @State var isEditing: Bool = false
     
-    @State var text = ""
-    @State var isEditing = false
-    
+    //MARK: - Body
     var body: some View {
         VStack {
-            
             SearchBar(text: $text, isEditing: $isEditing)
                 .padding(.horizontal)
             
@@ -33,6 +33,7 @@ struct SearchView: View {
     }
 }
 
+//MARK: - Preview
 #Preview {
     SearchView()
 }

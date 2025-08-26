@@ -8,34 +8,44 @@
 import SwiftUI
 
 struct SlideMenu: View {
+    //MARK: - Properties
+    @State private var show: Bool = false
+    @State private var width: CGFloat = UIScreen.main.bounds.width
+
+    private var menuButtons: Array = ["Profile", "Lists", "Topics", "Bookmarks", "Moments"]
+    private var edges: UIEdgeInsets? {
+        UIApplication.shared.connectedScenes
+            .compactMap { $0 as? UIWindowScene }
+            .first?
+            .windows
+            .first?
+            .safeAreaInsets
+    }
     
-    @State var show = false
-    
-    var menuButtons = ["Profile", "Lists", "Topics", "Bookmarks", "Moments"]
-    
-    var edges = UIApplication.shared.windows.first?.safeAreaInsets
-    
-    @State var width = UIScreen.main.bounds.width
-    
+    //MARK: - Body
     var body: some View {
         VStack {
             HStack(spacing: 0) {
                 VStack(alignment: .leading) {
+                    //MARK: - Profile Image
                     Image("logo")
                         .resizable()
                         .frame(width: 60, height: 60)
                         .clipShape(Circle())
                     
+                    //MARK: - Profile name
                     HStack(alignment: .top, spacing: 12) {
                         VStack(alignment: .leading, spacing: 12) {
-                            Text("Cem")
+                            Text("Mister Bean")
                                 .font(.title3)
                                 .fontWeight(.bold)
                                 .foregroundStyle(.black)
                             
-                            Text("@cem_salta")
+                            //MARK: - Profile @tag
+                            Text("@mr_bean")
                                 .foregroundStyle(.gray)
                             
+                            //MARK: - Following & Followers
                             HStack(spacing: 20) {
                                 FollowView(count: 8, title: "Following")
                                 FollowView(count: 16, title: "Followers")
@@ -48,6 +58,7 @@ struct SlideMenu: View {
                         
                         Spacer(minLength: 0)
                         
+                        //MARK: - Hide & Show Menu Button
                         Button {
                             withAnimation {
                                 self.show.toggle()
@@ -58,6 +69,7 @@ struct SlideMenu: View {
                         }
                     }
                     
+                    //MARK: - Menu Buttons (Icons)
                     VStack(alignment: .leading) {
                         ForEach(menuButtons, id:\.self) { item in
                             MenuButton(title: item)
@@ -66,6 +78,7 @@ struct SlideMenu: View {
                         Divider()
                             .padding(.top)
                         
+                        //MARK: - Twitter Ads Button
                         Button {
                             //
                         } label: {
@@ -74,6 +87,7 @@ struct SlideMenu: View {
                         
                         Divider()
                         
+                        //MARK: - Agreement Section
                         Button {
                             //
                         } label: {
@@ -95,6 +109,7 @@ struct SlideMenu: View {
                         Divider()
                             .padding(.bottom)
 
+                        //MARK: - Bottom Buttons
                         HStack {
                             Button {
                                 //
@@ -120,6 +135,7 @@ struct SlideMenu: View {
                     .opacity(show ? 1 : 0)
                     .frame(height: show ? nil : 0)
                     
+                    //MARK: - Create or Add Existing Account
                     VStack(alignment: .leading) {
                         Button {
                             //

@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct Feed: View {
+    //MARK: - Body
     var body: some View {
+        //MARK: - Tweets List
         ScrollView(.vertical, showsIndicators: false) {
             VStack(spacing: 18) {
                 TweetCellView(tweet: "Hello Im a proffessor in apple  ?", tweetImage: "post")
@@ -26,6 +28,7 @@ struct Feed: View {
     }
 }
 
+//MARK: - Preview
 #Preview {
     Feed()
 }

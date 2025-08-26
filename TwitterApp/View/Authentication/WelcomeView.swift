@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct WelcomeView: View {
+    
+    //MARK: - Body
     var body: some View {
         NavigationView {
             VStack {
                 HStack {
                     Spacer(minLength: 0)
-                    
+                    //MARK: - Header Logo Image
                     Image("Twitter")
                         .resizable()
                         .scaledToFill()
@@ -23,13 +25,14 @@ struct WelcomeView: View {
                     Spacer(minLength: 0)
                 }
                 Spacer(minLength: 0)
-                
+                //MARK: - Header Text
                 Text("See whats happening in the world right now.")
                     .font(.system(size: 30, weight: .heavy, design: .default))
                     .frame(width: (getRect().width * 0.9), alignment: .center)
                 
                 Spacer(minLength: 0)
                 
+                //MARK: - Sign In With Google Button
                 VStack(alignment: .center, spacing: 10) {
                     Button {
                         print("Sign in with Google")
@@ -54,6 +57,7 @@ struct WelcomeView: View {
                         }
                     }
                     
+                    //MARK: - Sign In With Apple Button
                     Button {
                         print("Sign in with Apple")
                     } label: {
@@ -76,6 +80,7 @@ struct WelcomeView: View {
                                 .frame(width: 320, height: 60, alignment: .center)
                         }
                     }
+                    //MARK: - Custom Divider
                     HStack {
                         Rectangle()
                             .foregroundStyle(.gray)
@@ -91,9 +96,10 @@ struct WelcomeView: View {
                             .frame(width: (getRect().width * 0.35),height: 1)
                     }
                     
+                    //MARK: - Create Account Button
                     NavigationLink(destination: RegisterView().navigationBarHidden(true)) {
                         RoundedRectangle(cornerRadius: 36)
-                            .foregroundStyle(Color(red: 29 / 255, green: 161 / 255, blue: 242 / 255))
+                            .foregroundStyle(.twitter)
                             .frame(width: 320, height: 60, alignment: .center)
                             .overlay {
                                 Text("Create account")
@@ -106,12 +112,13 @@ struct WelcomeView: View {
                 }
                 .padding()
                 
+                //MARK: - Bottom Buttons & Log In
                 VStack(alignment: .leading) {
                     VStack {
                         Text("Buy signing up, you agree to our ") + Text("Terms")
-                            .foregroundStyle(Color(red: 29 / 255, green: 161 / 255, blue: 242 / 255)) + Text(",") + Text(" Privacy Policy")
-                            .foregroundStyle(Color(red: 29 / 255, green: 161 / 255, blue: 242 / 255)) + Text(",") + Text(" Cookie use")
-                            .foregroundStyle(Color(red: 29 / 255, green: 161 / 255, blue: 242 / 255))
+                            .foregroundStyle(.twitter) + Text(",") + Text(" Privacy Policy")
+                            .foregroundStyle(.twitter) + Text(",") + Text(" Cookie use")
+                            .foregroundStyle(.twitter)
                     }
                     .padding(.bottom)
                     
@@ -119,7 +126,7 @@ struct WelcomeView: View {
                         Text("Have an account already? ")
                         NavigationLink(destination: LoginView().navigationBarHidden(true)) {
                             Text("Log in")
-                                .foregroundStyle(Color(red: 29 / 255, green: 161 / 255, blue: 242 / 255))
+                                .foregroundStyle(.twitter)
                         }
                     }
                 }
@@ -130,6 +137,7 @@ struct WelcomeView: View {
     }
 }
 
+//MARK: - Preview
 #Preview {
     WelcomeView()
 }

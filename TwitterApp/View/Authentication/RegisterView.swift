@@ -8,38 +8,24 @@
 import SwiftUI
 
 struct RegisterView: View {
-    
-    @State var name = ""
-    @State var email = ""
-    @State var password = ""
+    //MARK: - Properties
+    @State private var name: String = ""
+    @State private var email: String = ""
+    @State private var password: String = ""
     @Environment(\.dismiss) var dismiss
     
+    //MARK: - Body
     var body: some View {
         VStack {
-            ZStack {
-                HStack {
-                    Button {
-                        dismiss()
-                    } label: {
-                        Text("Cancel")
-                            .foregroundStyle(.blue)
-                    }
-                    Spacer()
-                }
-                .padding(.horizontal)
-                
-                Image("Twitter")
-                    .resizable()
-                    .scaledToFill()
-                    .padding(.trailing)
-                    .frame(width: 20, height: 20)
-            }
+            AuthenticationHeaderView()
             
+            // Header Prompt
             Text("Create your account")
                 .font(.title)
                 .bold()
                 .padding(.top, 35)
             
+            //MARK: - Register Fields
             VStack(alignment: .leading, spacing: nil) {
                 CustomAuthTextField(placeholder: "Name", text: $name)
                 CustomAuthTextField(placeholder: "Phone number or Email", text: $email)
@@ -48,6 +34,7 @@ struct RegisterView: View {
             
             Spacer(minLength: 0)
             
+            //MARK: - Bottom Section
             VStack {
                 Rectangle()
                     .frame(height: 1)
@@ -56,6 +43,7 @@ struct RegisterView: View {
                 HStack {
                     Spacer()
                     
+                    //MARK: - Next Button
                     Button {
                         //
                     } label: {
@@ -75,6 +63,7 @@ struct RegisterView: View {
     }
 }
 
+//MARK: - Preview
 #Preview {
     RegisterView()
 }

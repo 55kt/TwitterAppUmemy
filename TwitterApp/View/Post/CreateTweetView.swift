@@ -9,19 +9,24 @@ import SwiftUI
 
 struct CreateTweetView: View {
     
-    @State var text = ""
+    //MARK: - Properties
+    @State private var text: String = ""
+    @Environment(\.dismiss) private var dismiss
     
+    //MARK: - Body
     var body: some View {
         VStack {
             HStack {
+                //MARK: - Dismiss Button
                 Button {
-                    //
+                    dismiss()
                 } label: {
                     Text("Cancel")
                 }
                 
                 Spacer()
                 
+                //MARK: - Post Tweet Button
                 Button {
                     //
                 } label: {
@@ -33,12 +38,14 @@ struct CreateTweetView: View {
                 .clipShape(Capsule())
             }
             
+            //MARK: - Field
             MultilineTextField(text: $text)
         }
         .padding()
     }
 }
 
+//MARK: - Preview
 #Preview {
     CreateTweetView()
 }

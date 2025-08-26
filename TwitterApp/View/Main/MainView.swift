@@ -8,19 +8,23 @@
 import SwiftUI
 
 struct MainView: View {
-    @State var width = UIScreen.main.bounds.width - 90
-    @State var x = -UIScreen.main.bounds.width + 90
+    //MARK: - Properties
+    @State private var width: CGFloat = UIScreen.main.bounds.width - 90
+    @State private var x: CGFloat = -UIScreen.main.bounds.width + 90
     
+    //MARK: - Body
     var body: some View {
-        
         NavigationView {
             VStack {
+                //MARK: - Top Bar
                 ZStack(alignment: Alignment(horizontal: .leading, vertical: .center)) {
                     VStack {
                         TopBar(x: $x)
                         Home()
                     }
+                    .offset(x: x + width)
                     
+                    //MARK: - Slide Menu
                     SlideMenu()
                         .shadow(color: .black.opacity(x != 0 ? 0.1 : 0), radius: 5, x: 5, y: 0)
                         .offset(x: x)
@@ -61,6 +65,7 @@ struct MainView: View {
     }
 }
 
+//MARK: - Preview
 #Preview {
     MainView()
 }

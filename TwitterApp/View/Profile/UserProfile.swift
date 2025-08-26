@@ -8,16 +8,15 @@
 import SwiftUI
 
 struct UserProfile: View {
-    
+    //MARK: - Properties
     @State var offset: CGFloat = 0
     @State var titleOffset: CGFloat = 0
-    
-    @State var currentTab = "Tweets"
-    
+    @State var currentTab: String = "Tweets"
+    @State var tabBarOffset: CGFloat = 0
+
     @Namespace var animation
     
-    @State var tabBarOffset: CGFloat = 0
-    
+    //MARK: - Body
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(spacing: 15) {

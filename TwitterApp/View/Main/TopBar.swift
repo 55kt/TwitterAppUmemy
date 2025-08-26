@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct TopBar: View {
-    
+    //MARK: - Properties
     @Binding var x: CGFloat
-    @State var width = UIScreen.main.bounds.width
+    @State private var width: CGFloat = UIScreen.main.bounds.width
     
+    //MARK: - Body
     var body: some View {
         VStack {
             HStack {
@@ -46,6 +47,7 @@ struct TopBar: View {
     }
 }
 
+//MARK: - Preview
 #Preview {
     TopBar(x: .constant(0))
 }

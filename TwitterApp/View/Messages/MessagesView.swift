@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MessagesView: View {
+    
+    //MARK: - Body
     var body: some View {
         VStack {
             ScrollView {
@@ -19,6 +21,7 @@ struct MessagesView: View {
     }
 }
 
+//MARK: - Preview
 #Preview {
     MessagesView()
 }

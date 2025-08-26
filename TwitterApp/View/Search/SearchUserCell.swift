@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SearchUserCell: View {
+    //MARK: - Body
     var body: some View {
         HStack {
             Image("logo")
@@ -17,9 +18,9 @@ struct SearchUserCell: View {
                 .clipShape(.circle)
             
             VStack(alignment: .leading) {
-                Text("Cem")
+                Text("Mister Bean")
                     .fontWeight(.heavy)
-                Text("@cem_salta")
+                Text("@mr_bean")
             }
             
             Spacer(minLength: 0)
@@ -27,6 +28,7 @@ struct SearchUserCell: View {
     }
 }
 
+//MARK: - preview
 #Preview {
     SearchUserCell()
 }

@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct SearchCell: View {
+    //MARK: - Properties
+    var tag: String = ""
+    var tweets: String = ""
     
-    var tag = ""
-    var tweets = ""
-    
+    //MARK: - Body
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
             Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
@@ -22,6 +23,7 @@ struct SearchCell: View {
     }
 }
 
+//MARK: - Preview
 #Preview {
     SearchCell()
 }
