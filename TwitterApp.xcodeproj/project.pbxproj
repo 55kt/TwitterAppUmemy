@@ -25,6 +25,9 @@
 		4B51DF0C2E3FC92D003A2702 /* CreateTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B51DF0B2E3FC92D003A2702 /* CreateTweetView.swift */; };
 		4B51DF0E2E3FC9F7003A2702 /* MultilineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B51DF0D2E3FC9F7003A2702 /* MultilineTextField.swift */; };
 		4B51DF2B2E412483003A2702 /* TweetCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B51DF2A2E412483003A2702 /* TweetCellView.swift */; };
+		4B594BE62E5DF29700BD1363 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B594BE52E5DF29700BD1363 /* RegisterView.swift */; };
+		4B594BE82E5DF3C000BD1363 /* CustomAuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B594BE72E5DF3C000BD1363 /* CustomAuthTextField.swift */; };
+		4B594BEA2E5DF50900BD1363 /* SecureAuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B594BE92E5DF50900BD1363 /* SecureAuthTextField.swift */; };
 		4BF855422E54C2A3008C1288 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF855412E54C2A3008C1288 /* TopBar.swift */; };
 		4BF855442E54C3FC008C1288 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF855432E54C3FC008C1288 /* MainView.swift */; };
 		4BF855462E54C5A5008C1288 /* SlideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF855452E54C5A5008C1288 /* SlideMenu.swift */; };
@@ -55,6 +58,9 @@
 		4B51DF0B2E3FC92D003A2702 /* CreateTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTweetView.swift; sourceTree = "<group>"; };
 		4B51DF0D2E3FC9F7003A2702 /* MultilineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTextField.swift; sourceTree = "<group>"; };
 		4B51DF2A2E412483003A2702 /* TweetCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCellView.swift; sourceTree = "<group>"; };
+		4B594BE52E5DF29700BD1363 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		4B594BE72E5DF3C000BD1363 /* CustomAuthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAuthTextField.swift; sourceTree = "<group>"; };
+		4B594BE92E5DF50900BD1363 /* SecureAuthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureAuthTextField.swift; sourceTree = "<group>"; };
 		4BF855412E54C2A3008C1288 /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
 		4BF855432E54C3FC008C1288 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		4BF855452E54C5A5008C1288 /* SlideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenu.swift; sourceTree = "<group>"; };
@@ -169,6 +175,8 @@
 				4BF855472E54C678008C1288 /* FollowView.swift */,
 				4BF855492E54C90B008C1288 /* MenuButton.swift */,
 				4BF855A52E57671C008C1288 /* TabButton.swift */,
+				4B594BE72E5DF3C000BD1363 /* CustomAuthTextField.swift */,
+				4B594BE92E5DF50900BD1363 /* SecureAuthTextField.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -177,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				4B4F1F402E5CA49200FB5552 /* WelcomeView.swift */,
+				4B594BE52E5DF29700BD1363 /* RegisterView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -316,11 +325,14 @@
 				4B51DF042E3FC2E9003A2702 /* Feed.swift in Sources */,
 				4BF855422E54C2A3008C1288 /* TopBar.swift in Sources */,
 				4B51DF022E3FC16D003A2702 /* Home.swift in Sources */,
+				4B594BE82E5DF3C000BD1363 /* CustomAuthTextField.swift in Sources */,
+				4B594BE62E5DF29700BD1363 /* RegisterView.swift in Sources */,
 				4BF855482E54C678008C1288 /* FollowView.swift in Sources */,
 				4B51DF0A2E3FC307003A2702 /* MessagesView.swift in Sources */,
 				4BF8554C2E560821008C1288 /* UserProfile.swift in Sources */,
 				4B51DF0E2E3FC9F7003A2702 /* MultilineTextField.swift in Sources */,
 				4B51DE7E2E3D43C9003A2702 /* TwitterAppApp.swift in Sources */,
+				4B594BEA2E5DF50900BD1363 /* SecureAuthTextField.swift in Sources */,
 				4B4F1F412E5CA49200FB5552 /* WelcomeView.swift in Sources */,
 				4B51DF082E3FC2FE003A2702 /* NotificationsView.swift in Sources */,
 				4BF855A62E57671C008C1288 /* TabButton.swift in Sources */,
